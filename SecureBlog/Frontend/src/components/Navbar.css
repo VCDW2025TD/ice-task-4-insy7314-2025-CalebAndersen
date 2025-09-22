@@ -1,0 +1,69 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff; /* Clean white background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px; /* More padding */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
+}
+
+.navbar .logo {
+  color: #2c3e50; /* Darker, more professional color */
+  font-size: 1.8rem; /* Larger logo */
+  font-weight: 700; /* Bolder */
+  letter-spacing: 0.5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* More space between links */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: #34495e; /* Muted text color */
+  text-decoration: none;
+  font-size: 1.05rem; /* Slightly larger font */
+  font-weight: 500; /* Medium weight */
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #007bff; /* Primary blue on hover */
+}
+
+.navbar ul li a.active { /* NavLink adds .active */
+  color: #007bff; /* Primary blue for active link */
+  font-weight: 600; /* Bolder for active link */
+}
+
+/* Make the logout button look like a button */
+.logout-link {
+  background-color: #dc3545; /* Red for logout */
+  color: #ffffff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-link:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-1px);
+}
+
+/* Spacer to prevent content being hidden under fixed navbar */
+.navbar-spacer {
+  height: 65px; /* Adjust height to match new navbar padding */
+}

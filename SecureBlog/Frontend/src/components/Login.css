@@ -1,0 +1,109 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e7eb; /* Softer, muted background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 45px 40px; /* Slightly more padding */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Deeper, softer shadow */
+    width: 100%;
+    max-width: 420px; /* Slightly wider form */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-form:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.login-form h2 {
+    margin-bottom: 30px; /* More space below heading */
+    color: #2c3e50; /* Darker, more professional heading color */
+    font-size: 28px; /* Larger heading */
+    font-weight: 600; /* Semi-bold */
+}
+
+.form-group {
+    margin-bottom: 20px; /* More space between form groups */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* More space below label */
+    color: #34495e; /* Darker label color */
+    font-weight: 500; /* Medium weight */
+    font-size: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 24px); /* Adjust for padding and border */
+    padding: 12px; /* More padding inside input */
+    border: 1px solid #dcdcdc; /* Lighter border */
+    border-radius: 6px; /* Slightly more rounded input fields */
+    font-size: 16px;
+    color: #333333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+    outline: none;
+}
+
+.login-form button {
+    background-color: #007bff; /* Primary blue */
+    color: #ffffff;
+    padding: 14px 25px; /* Larger button padding */
+    border: none;
+    border-radius: 6px; /* More rounded button */
+    font-size: 18px;
+    font-weight: 600; /* Semi-bold button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 20px; /* More space above button */
+    letter-spacing: 0.5px; /* Slightly spaced letters */
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.login-form .error-message {
+    color: #e74c3c; /* More vibrant error color */
+    background-color: #fdeded; /* Light red background for error */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* More space below error */
+    font-size: 14px;
+    border: 1px solid #e74c3c;
+}
+
+.login-form p {
+    margin-top: 25px; /* More space above paragraph */
+    color: #7f8c8d; /* Muted text color */
+    font-size: 15px;
+}
+
+.login-form p a {
+    color: #007bff; /* Same primary blue for link */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-form p a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
